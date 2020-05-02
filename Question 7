@@ -1,0 +1,4 @@
+Tombstone are costly in both time and space as they are never deallocated and their storage is never reclaimed. . Every access to a heap dynamic variable requires one more level of indirection which will require extra additional machine cycle on most systems.
+
+In lock and key method pointer value at represented as orders pairs and heap dynamic are represented as the storage for variable and also a header cell that will store the integer lock value. When a heap dynamic variable is allocated, a lock value is created and placed in the lock cell of heap dynamic and key cell of the pointer . And every access to pointer compares the key value to the lock value in heap dynamic and if they match the access is legal otherwise it is run time error.
+
