@@ -1,0 +1,11 @@
+(D)
+
+Inside the for loop, we enter the switch statement. We match the calue of j + 2 in the different cases in the switch block
+
+If j + 2 == 3 , then the control goes to the case when j + 2 == 2, then the j-- is executed.
+
+If j + 2 == 2 ,then the j-- is executed.
+
+If j + 2 == 0 ,then the j += 2 is executed.
+
+The the switch statement is completed, and the if block is executed and if j is greater than 0, then we go out of loop. If j is negative, thenj = 3-i is executed and the loop is executed again.
