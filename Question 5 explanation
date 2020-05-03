@@ -1,0 +1,3 @@
+In case of code with Goto Statement the no of times loops runs is less to find the first row with all zero values.
+
+Because of which it is efficient to use Goto in this example.
