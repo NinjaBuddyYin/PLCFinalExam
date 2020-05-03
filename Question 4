@@ -1,0 +1,33 @@
+The form "while B do S end" can be written as:
+
+{ P } while B do S end { Q }
+
+where P is the Precondition and Q the postcondition
+
+The four criteria to prove while loop construct correct are:
+
+P => I
+
+{I and B} S {I}
+
+(I and (not B)) => Q
+
+the loop terminates
+
+Criteria 1: P => I : The loop invariant must be true initially
+
+Criteria 2: {I and B} S {I} : The loop invariant is not changed by executing the body of loop
+
+Criteria 3: (I and (not B)) => Q : If I is true and B is false then Q is true
+
+Criteria 4: the loop terminates
+
+Proving Correctness of given while loop:
+
+Criteria 1: The invariant that can be used here is that Power>0 . This holds true initially.
+
+Criteria 2: After loop is executed value of power is still more than 0.
+
+Criteria 3: When i>n i.e. B gets false but I is true, the Q is true. After the loop power = x^n which is same as Q
+
+Criteria 4: After B gets false loop terminates 
