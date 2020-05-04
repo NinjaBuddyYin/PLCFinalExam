@@ -22,10 +22,6 @@ float bb = (float) 0123.222;
 
 System.out.println(aa);
 System.out.println(bb);
-
-
-  
-
   
 String s = "Hello";
   
