@@ -1,0 +1,67 @@
+Context free grammar is a formal grammar which is used to generate all possible strings in a given formal language.
+
+Context free grammar G can be defined by four tuples as:
+
+G= (V, T, P, S)  
+Where,
+G describes the grammar
+T describes a finite set of terminal symbols.
+V describes a finite set of non-terminal symbols
+P describes a set of production rules
+S is the start symbol.
+EXAMPLE:---
+
+L= {wcwR | w € (a, b)*}
+
+Production rules:
+
+S → aSa  
+S → bSb  
+S → c  
+Now check that abbcbba string can be derived from the given CFG.
+
+S ⇒ aSa  
+S ⇒ abSba  
+S ⇒ abbSbba  
+S ⇒ abbcbba  
+By applying the production S → aSa, S → bSb recursively and finally applying the production S → c, we get the string abbcbba.
+
+EBNF:------
+
+EBNF is a way to specify a formal language grammar. It can be considered a metalanguage because it is a language to describe other languages
+
+A formal language is a language with a precise structure, like programming languages, data languages, or Domain Specific Languages (DSLs). Java, XML, and CSS are all examples of formal languages.
+
+A grammar can be used to define two opposite things:
+
+How to recognize the different portions in a piece of code written in the formal language.
+The possible ways to build a valid piece of code in the formal language.
+For example, a simple grammar could tell us that a document in our language is composed by a list of declarations, and declarations are defined by the sequence of a keyword Xyz and a a name.
+
+Based on this, we could:
+
+Recognize in the code sequences of the keyword Xyz and a name as instances of these declarations we have considered.
+We could generate valid documents in our language by writing a list of declarations, each time inserting a keyword Xyz and a name.
+While there are two possible usages for a grammar, we are typically interested only in the first one: recognizing if a piece of code is valid for a given language and identifying the different structures typical of the language (like functions, methods, classes, etc.).
+
+BNF WITH EXAMPLE :-----
+
+BNF stands for Backus-Naur Form. It is used to write a formal representation of a context-free grammar. It is also used to describe the syntax of a programming language.
+
+BNF notation is basically just a variant of a context-free grammar.
+
+In BNF, productions have the form:
+
+Left side → definition
+Where leftside ∈ (Vn∪ Vt)+ and definition ∈ (Vn∪ Vt)*. In BNF, the leftside contains one non-terminal.
+
+We can define the several productions with the same leftside. All the productions are separated by a vertical bar symbol "|".
+
+There is the production for any grammar as follows:
+
+S → aSa  
+S → bSb  
+S → c  
+In BNF, we can represent above grammar as follows:
+
+S → aSa| bSb| c  
