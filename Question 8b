@@ -1,16 +1,27 @@
-b)
-
-j=-3;
-for(i=0;i<3;i++)
+#include <stdio.h>
+int main(void)
 {
-if(j+2==3||j+2==2)
-j--;
-else if(j+2==0)
-j+=2;
-else
-j=0;
-if(j>0)
-goto a;
-j=3-i;
+intj = -3;
+int i;
+
+for(i = 0; i < 3; i++)
+{
+	if( j+2 == 2 )
+	{
+			j = j -1;
+			goto= line 21;
+	}
+
+	if( j+2 == 0)
+	{
+			j = j+2;
+			goto line 21;
+	}
+
+	if( j > 0 )
+	{
+			goto line 18;
+			j = 3-i;
+	}
 }
-a:;
+}
